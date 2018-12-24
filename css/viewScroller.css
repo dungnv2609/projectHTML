@@ -1,0 +1,51 @@
+html, body {
+  height: 100%;
+}
+
+html {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.mainbag {
+  position: relative;
+  overflow-y: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.mainview, .mainview-table {
+  position: relative;
+  width: 100%;
+	font-size: 16px;
+  vertical-align: bottom;
+  white-space: normal;
+}
+
+.mainview-scroll {
+  overflow-y: scroll;
+}
+
+@media (min-width: 961px) {
+  .mainview, .mainview-table {
+    height: 100%;
+  }
+}
+
+@media (max-width: 960px) {
+  .mainbag {
+    overflow-y: scroll;
+  }
+
+  .mainview-slogan {
+    height: 100% !important;
+  }
+
+  .mainview-table {
+    height: 2400px;
+  }
+
+  .mainview-scroll {
+    overflow-y: hidden;
+  }
+}
