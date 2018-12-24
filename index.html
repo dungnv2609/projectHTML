@@ -1,514 +1,475 @@
 <!DOCTYPE html>
+<html>
 
 <head>
-  <title>Nakamura</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NOMOCA</title>
+
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="./css/custom.css">
-  <link rel="stylesheet" href="./css/flex.css">
-  <link rel="stylesheet" href="./css/viewScroller.css">
+  <link rel="stylesheet" href="css/structure.css">
+  <link rel="stylesheet" href="css/content.css">
 
-  <script src="./js/jquery-3.1.0.min.js"></script>
-  <script src="./js/jquery.easing.min.js"></script>
-  <script src="./js/jquery.mousewheel.min.js"></script>
-  <script src="./js/viewScroller.js"></script>
-  <script src="./js/custom.js"></script>
-  <script src="./js/button.js" async="async" defer="defer"></script>
-  <script>
-  	window.lineIt = {};
-      (function(g,d){
-          var v= '1475487966';
-          g._trmq=[];g._trm=function(){g._trmq.push(arguments)};
-          g.onerror=function(m,f,l,c){g._trm('send','exception',m,f,l,c)};
-          var s=d.createElement('script');s.async=1;
-          s.src='./js/torimochi.js';
-          var t=d.getElementsByTagName('script')[0];t.parentNode.insertBefore(s,t);
-      })(window, document);
-
-      _trm('enable', { productKey : 'line-social-plugin-real' });
-      _trm('set', 'attributes', { attr0 : '0' });
-      _trm('send', 'pageview');
-  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/mainjs.js"></script>
 </head>
 
 <body>
+
+  <!----- Main Image ----->
   <header>
-    <div class="mt20 box-container box-space-between box-row-wrap" id="header">
-      <div class="box-container box-space-between" id="header_sp">
-        <div class="ml20">
-          <a href="./index.html" class="pl0"><img src="./images/logo.png" class="box-xs-80"></a>
-        </div>
-        <div class="visible-sm mr20">
-          <a href="#" id="toggle_menu" class="pl0"><img src="./images/sp/menu.png" class="small-btn-logo"></a>
-        </div>
-      </div>
-
-      <div class="hidden-sm mr20 box-container box-end box-middle" id="navbar">
-        <a href="#view-1" class="hidden-sm">HOME</a>
-        <a href="#view-2" class="hidden-sm">政策</a>
-        <a href="#view-4" class="hidden-sm">プロフィール</a>
-        <a href="#view-5" class="hidden-sm">行動軌跡</a>
-
-        <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.takeshinakamura.jp/election/" target="_blank">
-          <img src="./images/social_facebook.png" class="large-btn-logo hidden-sm">
-          <span class="visible-sm">Facebook</span>
-        </a>
-        <a href="https://twitter.com/home?status=http%3A//www.takeshinakamura.jp/election/" target="_blank">
-          <img src="./images/social_twitter.png" class="large-btn-logo hidden-sm">
-          <span class="visible-sm">Twitter</span>
-        </a>
-        <a href="#" class="btnWrap shareEl">
-          <div class="t40 icon">
-            <img src="./images/social_line.png" class="small-btn-logo hidden-sm">
-            <span class="visible-sm">LINE</span>
-          </div>
-        </a>
-        <a href="https://plus.google.com/share?url=http%3A//www.takeshinakamura.jp/election/" target="_blank">
-          <img src="./images/social_google.png" class="small-btn-logo hidden-sm">
-          <span class="visible-sm">Google +</span>
-        </a>
-      </div>
+    <div class="main_img">
+      <div class="pc"><img src="images/mainimage.jpg" alt="もっと患者さまのための時間を"></div>
+      <div class="sp"><img src="images/mainimage_sp.jpg" alt="もっと患者さまのための時間を"></div>
     </div>
   </header>
+  <!----- End Main Image ----->
 
-  <div class="menu">
-    <div class="buttons-section">
-      <a href="#view-1" class="vs-anchor"><button class="btn-own" id="view-1-button"></button></a>
-    </div>
+  <!----- Content ----->
+  <div id="contentBase">
+    <div id="content">
 
-    <div class="buttons-section">
-      <a href="#view-2" class="vs-anchor"><button class="btn-own" id="view-2-button"></button></a>
-    </div>
+      <!----- Section 01 ----->
+      <div id="section1">
+        <div class="wrap">
+          <div class="common_info">
+            <div class="common_text">
+              <h2>患者さまに会計待ちでストレスを与えたくない</h2>
+              <h2>医療事務をもっと効率的にしたいとお考えの方へ</h2>
+            </div>
+            <ul class="common_btn clearfix">
+              <li><a href="tel:0120-811-009"><img src="images/btn_tel.png" alt="0120-811-009"></a></li>
+              <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc_PeHq5Ls5SOFEE6UsfiFBVtS__2dQmItXLGEw3K9rK3CoKg/viewform?usp=sf_link#start=invite" target="_blank"><img src="images/btn_inq.png" alt="ご相談・ご質問フォーム"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!----- End Section 01 ----->
 
-    <div class="buttons-section">
-      <a href="#view-3" class="vs-anchor"><button class="btn-own" id="view-3-button"></button></a>
-    </div>
+      <!----- Section 02 ----->
+      <div id="section2">
+        <div class="wrap">
+          <div class="sec2_title">
+            <h2>“患者さまと触れ合う時間”</h2>
+            <h2>しっかり確保できていますか？</h2>
+          </div>
+          <div class="box-container box-row-wrap box-space-between maxH">
+            <div class="box-xs-100 box-sm-48">
+              <div class="feature_box">
+                <div class="box_title1">
+                  <h3 class="hTit">スタッフの抱える問題</h3>
+                </div>
+                <div class="box_list">
+                  <ul class="color1">
+                    <li class="hBody">手入力のため金銭の誤差が発生する</li>
+                    <li class="hBody">雑務・医事業務が多い</li>
+                    <li class="hBody">もっと患者様と接したい</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="box-xs-100 box-sm-48">
+              <div class="feature_box">
+                <div class="box_title2">
+                  <h3 class="hTit">患者さまに与える問題</h3>
+                </div>
+                <div class="box_list">
+                  <ul class="color2">
+                    <li class="hBody">待ち時間が長い</li>
+                    <li class="hBody">丁寧な対応をしてもらえない</li>
+                    <li class="hBody">満足のいく説明が受けられない</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="box-xs-100 mt20">
+              <div class="box_text">
+                <h3>医療事務を改善しなければ、</h3>
+                <h3>患者さまへの時間は確保できません。</h3>
+                <h3>スタッフの職場環境における満足度に関与します。</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!----- End Section 02 ----->
 
-    <div class="buttons-section">
-      <a href="#view-4" class="vs-anchor"><button class="btn-own" id="view-4-button"></button></a>
-    </div>
+      <!----- Section 03 ----->
+      <div id="section3">
+        <div class="wrap">
+          <div class="sec3_title">
+            <img class="sec3_text" src="images/sec03_text.png" alt="もっと患者さまの時間を作るために">
+            <h2>クリニック・診療所専用スマート簡易自動精算機</h2>
+            <img src="images/nomoca_logo.png" alt="NOMOCA-Stand">
+          </div>
+          <div class="box-container box-row-wrap box-space-between maxH">
+            <div class="box-xs-100 box-sm-48">
+              <div class="feature_box shadow">
+                <div class="box_title1">
+                  <h3 class="hTit">医院スタッフのメリット</h3>
+                </div>
+                <div class="box_list">
+                  <ul class="color1">
+                    <li class="hBody">医療事務の業務負担を軽減</li>
+                    <li class="hBody">金銭授受の管理ストレスの減少</li>
+                    <li class="hBody">職場環境の満足度UP</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="box-xs-100 box-sm-48">
+              <div class="feature_box shadow">
+                <div class="box_title2">
+                  <h3 class="hTit">患者さまのメリット</h3>
+                </div>
+                <div class="box_list">
+                  <ul class="color2">
+                    <li class="hBody">診察後すぐに精算ができる</li>
+                    <li class="hBody">おつりの間違いがなくなる</li>
+                    <li class="hBody">スタッフとの会話がスムーズになる</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="diag_box">
+            <div class="box-container box-row-wrap mt20 maxH">
+              <div class="box-xs-100">
+                <div class="title">
+                  <h2>導入実績</h2>
+                  <h3>導入後の会計・受付業務の負担軽減は80％以上</h3>
+                  <p>※NOMOCaスタンドを導入した一院のモニタリングデータです。</p>
+                </div>
+              </div>
+              <div class="box-xs-100 box-sm-50 pd-sm1">
+                <div class="diag_left">
+                  <h3 class="hTit">自動精算で労力削減！</h3>
+                  <img src="images/sec03_img01.png" alt="自動精算で労力削減！">
+                  <div class="hBody">
+                    <p>お年寄りの方でも使いやすいため、ほとんどの患者さまが自動精算機(NOMOCa-Stand)をご利用になります。</p>
+                  </div>
+                </div>
+              </div>
+              <div class="box-xs-100 box-sm-50 pd-sm2">
+                <div class="diag_right">
+                  <h3 class="hTit">再来受付が可能！</h3>
+                  <img src="images/sec03_img02.png" alt="再来受付が可能！">
+                  <div class="hBody">
+                    <p>再来・再診時の受付もNOMOCa-Standで行えます。診察券を読み取り受付を行いますので、非常にスムーズです。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="diag_bt shadow">
+            <div class="box-container box-row-wrap box-space-between">
+              <div class="box-xs-100 box-sm-75">
+                <h2>レセコン<br class="ip6_sp">(医療会計システム)と連携しております。</h2>
+                <p>患者さまデータ管理の効率化を実現。</p>
+                <p>90%以上のレセコンと連携可能です。</p>
+              </div>
+              <div class="box-xs-100 box-sm-25">
+                <img class="ip6_pc" src="images/sec03_img03.png" alt="レセコン(医療会計システム)と連携しております">
+                <img class="ip6_sp" src="images/sec03_img03_sp.png" alt="レセコン(医療会計システム)と連携しております">
+              </div>
+            </div>
+          </div>
+          <div class="img_text mt80">
+            <img src="images/sec03_img04.png" alt="患者さまのための時間を確保できます。">
+          </div>
+        </div>
+      </div>
+      <!----- End Section 03 ----->
 
-    <div class="buttons-section">
-      <a href="#view-5" class="vs-anchor"><button class="btn-own" id="view-5-button"></button></a>
+      <!----- Section 04 ----->
+      <div id="section4">
+        <div class="wrap">
+          <div class="common_info">
+            <div class="common_text">
+              <h2>製品やサービスに関するご質問・ご相談は</h2>
+              <h2>お気軽にお問い合わせください。</h2>
+            </div>
+            <ul class="common_btn clearfix">
+              <li><a href="tel:0120-811-009"><img src="images/btn_tel.png" alt="0120-811-009"></a></li>
+              <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc_PeHq5Ls5SOFEE6UsfiFBVtS__2dQmItXLGEw3K9rK3CoKg/viewform?usp=sf_link#start=invite" target="_blank"><img src="images/btn_inq.png" alt="ご相談・ご質問フォーム"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!----- End Section 04 ----->
+
+      <!----- Section 05 ----->
+      <div id="section5">
+        <div class="wrap">
+          <h2>お客様の声</h2>
+          <div class="testimonial_box">
+            <div class="box-container box-row-wrap box-space-between">
+              <div class="box-xs-100 box-sm-18">
+                <div class="testimonial_img">
+                  <img class="ip6_pc" src="images/sec04_img01.png" alt="医療法人社団奉志会大西メディカルクリニック様">
+                  <img class="ip6_sp" src="images/sec04_img01_sp.png" alt="医療法人社団奉志会大西メディカルクリニック様">
+                  <span>医療法人社団奉志会<br>大西メディカルクリニック様</span>
+                </div>
+              </div>
+              <div class="box-xs-100 box-sm-77">
+                <div class="testimonial_content shadow">
+                  <p>当院は整形外科のリハビリ患者様が多く、会計待ち時間が平均で１５分ほどかかっておりましたが、<span class="t1-color">導入後、会計待ち時間「ゼロ」に改善</span>されました。また金銭授受のクレームが激減し、会計履歴を見ることで対応しやすくなりました。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial_box">
+            <div class="box-container box-row-wrap box-space-between">
+              <div class="box-xs-100 box-sm-77 box-second">
+                <div class="testimonial_content shadow">
+                  <p><span class="t1-color">導入したことで、患者さまへのフォローや予約率向上、販促などへの業務シフトで収益改善</span>ができました。柔軟なシステム設計ができたことや、<span class="t1-color">最も省スペースでコストパフォーマンスに優れていた</span>ことも導入の決め手となりました。採用・教育費など年間約80万円以上削減ができたことも効果として実感しています。</p>
+                </div>
+              </div>
+              <div class="box-xs-100 box-sm-18 box-first">
+                <div class="testimonial_img">
+                  <img class="ip6_pc" src="images/sec04_img02.png" alt="新宿駅三丁目クリニック様">
+                  <img class="ip6_sp" src="images/sec04_img02_sp.png" alt="新宿駅三丁目クリニック様">
+                  <span>新宿駅三丁目クリニック様</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial_box">
+            <div class="box-container box-row-wrap box-space-between">
+              <div class="box-xs-100 box-sm-18">
+                <div class="testimonial_img">
+                  <img class="ip6_pc" src="images/sec04_img03.png" alt="せいせき内科様">
+                  <img class="ip6_sp" src="images/sec04_img03_sp.png" alt="せいせき内科様">
+                  <span>せいせき内科様</span>
+                </div>
+              </div>
+              <div class="box-xs-100 box-sm-77">
+                <div class="testimonial_content shadow">
+                  <p>開業当時は手作業で会計を実施していましたが、<span class="t1-color">釣り銭間違いをなくし、患者さんの満足度を少しでも上げたい</span>と思い導入しました。金銭授受のストレスがないのでスタッフにも好評です。「機械ができることは機械に任せる」ことで業務の切り分けがしっかりとできるようになりました。<span class="t1-color">事務スタッフ1人を半永久的に雇用すると考えると導入価値は非常に高い</span>と感じています。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!----- End Section 05 ----->
+
+      <!----- Section 06 ----->
+      <div id="section6">
+        <div class="wrap">
+          <h2>よくある質問</h2>
+          <div class="qa shadow">
+            <div class="qa-top clearfix">
+              <div class="qa-icon">
+                <img src="images/qa_img01.png" alt="qa">
+              </div>
+              <div class="qa-text">
+                <p>Q.全てのレセコン・電子カルテと接続できますか？</p>
+              </div>
+            </div>
+            <div class="qa-bottom clearfix">
+              <div class="qa-icon">
+                <img src="images/qa_img02.png" alt="qa">
+              </div>
+              <div class="qa-text">
+                <p>A.<span class="t2-color">90%以上のレセコン・電子カルテと接続が可能</span>です。</p>
+                <p>現在使用されているものと接続可能かはお気軽にお問い合わせください。</p>
+              </div>
+            </div>
+          </div>
+          <div class="qa shadow">
+            <div class="qa-top clearfix">
+              <div class="qa-icon">
+                <img src="images/qa_img01.png" alt="qa">
+              </div>
+              <div class="qa-text">
+                <p>Q.お年寄りの患者さまが多い施設ですが、お年寄りの方でも使いこなせますか？</p>
+              </div>
+            </div>
+            <div class="qa-bottom clearfix">
+              <div class="qa-icon">
+                <img src="images/qa_img02.png" alt="qa">
+              </div>
+              <div class="qa-text">
+                <p>A.はい。操作は簡単ですので、問題なくご利用頂いております。</p>
+                <p><span class="t2-color">60−80代の方が中心のクリニックでも導入していただいていますが、会計の90％以上で自動精算機をご利用頂けています。どうしても難しい方は受付での対応に切り替えることが簡単にできますのでご安心ください。</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="qa shadow">
+            <div class="qa-top clearfix">
+              <div class="qa-icon">
+                <img src="images/qa_img01.png" alt="qa">
+              </div>
+              <div class="qa-text">
+                <p>Q.導入することで機械的なクリニックだと思われませんか？人の温かみが消えて寂しくなる気がします。</p>
+              </div>
+            </div>
+            <div class="qa-bottom clearfix">
+              <div class="qa-icon">
+                <img src="images/qa_img02.png" alt="qa">
+              </div>
+              <div class="qa-text">
+                <p>A.従来、忙しかった事務スタッフの手を空けることで、事務スタッフの方々には、<span class="t2-color">「より接遇向上に力を入れることができた」</span>というお声を頂戴しています。</p>
+                <p>接遇の質を高めることで、「他のクリニックにはない強み」になると考えております。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!----- End Section 06 ----->
+
+      <!----- Section 07 ----->
+      <div id="section7">
+        <div class="wrap">
+          <div class="sec7_title">
+            <h3>患者さまと<br class="sp">クリニックをつなぐ</h3>
+            <h2>NOMOCaソリューション</h2>
+            <p>予約・受付・会計・患者さまデータ管理までスマートに</p>
+          </div>
+        </div>
+        <div class="loop_box ip6_pc">
+          <img src="images/sec07_img01.png" alt="患者様とクリニックをつなぐ NOMOCaソリューション">
+        </div>
+        <div class="loop_box ip6_sp">
+          <div id="loopslider">
+            <div id="loopslider_wrap">
+              <ul>
+                <li><img src="images/sec07_img01.png" alt="患者様とクリニックをつなぐ NOMOCaソリューション"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flow_box">
+          <div class="box-container box-row-wrap box-space-between maxH">
+            <div class="box-xs-100 box-sm-48 box-md-49 flow_box_item1 hBody box-container box-space-around">
+              <div class="box-xs-30">
+                <img src="images/sec07_img02.png" alt="NOMOCa-App">
+              </div>
+              <div class="box-xs-60">
+                <h3>NOMOCa-App<span>診察券アプリケーション</span></h3>
+                <p>既存の予約システム、レセコン、電子カルテシステム連携の診察券アプリ</p>
+              </div>
+            </div>
+            <div class="box-xs-100 box-sm-48 box-md-49 flow_box_item2 hBody box-container box-space-around">
+              <div class="box-xs-30">
+                <img src="images/sec07_img03.png" alt="NOMOCa-Stand">
+              </div>
+              <div class="box-xs-60">
+                <h3>NOMOCa-Stand<span>クリニック・診療所専用スマート簡易自動精算器</span></h3>
+                <p>既存の予約システム、レセコン、電子カルテシステム連携の簡易自動精算システム</p>
+              </div>
+            </div>
+            <div class="box-xs-100 box-sm-48 box-md-49  flow_box_item3 hBody box-container box-space-around">
+              <div class="box-xs-30">
+                <img src="images/sec07_img04.png" alt="NOMOCa-Guide">
+              </div>
+              <div class="box-xs-60">
+                <h3>NOMOCa-Guide<span>待合・会計案内表示システム</span></h3>
+                <p>ご案内の二度手間を削減し静かでスムーズなご案内を実現</p>
+              </div>
+            </div>
+            <div class="box-xs-100 box-sm-48 box-md-49  flow_box_item4 hBody box-container box-space-around">
+              <div class="box-xs-30">
+                <img src="images/sec07_img05.png" alt="NOMOCa-Regi">
+              </div>
+              <div class="box-xs-60">
+                <h3>NOMOCa-Regi<span>窓口用精算システム</span></h3>
+                <p>窓口会計速度の向上と違算の防止にクリニック専用スマート自動釣銭機</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!----- End Section 07 ----->
+
+      <!----- Section 08 ----->
+      <div id="section8">
+        <div class="wrap">
+          <h2>NOMOCaで</h2>
+          <h2>院内環境をもっと<br class="sp">スマートに</h2>
+          <p>患者さまが過ごしやすく</p>
+          <p>スタッフが働きやすい環境を</p>
+          <p>実現しませんか？</p>
+        </div>
+      </div>
+      <!----- Section 08 ----->
+
+      <!----- Section 09 ----->
+      <div id="section9">
+        <div class="wrap">
+          <div class="common_info">
+            <div class="common_text">
+              <h2>NOMOCaソリューションサービスに関する</h2>
+              <h2>ご質問・ご相談はお気軽にお問い合わせください。</h2>
+            </div>
+            <ul class="common_btn clearfix">
+              <li><a href="tel:0120-811-009"><img src="images/btn_tel.png" alt="0120-811-009"></a></li>
+              <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSc_PeHq5Ls5SOFEE6UsfiFBVtS__2dQmItXLGEw3K9rK3CoKg/viewform?usp=sf_link#start=invite" target="_blank"><img src="images/btn_inq.png" alt="ご相談・ご質問フォーム"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!----- End Section 09 ----->
+
     </div>
   </div>
+  <!----- End Content ----->
 
-  <div class="mainbag">
-    <div vs-anchor="view-1" class="mainview mainview-slogan" id="view-1-sp">
-      <div id="s1">
-        <div class="slogan">
-          <h1>一緒に</h1>
-          <h1>変えよう。</h1>
-          <h3>昭島から変える、東京を変える</h3>
-        </div>
-
-        <div class="introduce">
-          <h3>中村たけし</h3>
-          <h3>41歳</h3>
-        </div>
-      </div>
-    </div>
-
-    <div vs-anchor="view-2" class="mainview mainview-table" id="view-2-sp">
-      <div id="s2">
-        <div class="over-content box-container box-row-wrap">
-          <div class="box-md-33 box-xs-100">
-            <div class="table-title box-container box-row-wrap box-middle">
-              <div>
-                <h3 class="box-xs-100">KAIZEN断行!!</h3>
-                <h1 class="box-xs-100">魅力あふれる昭島から。</h1>
+  <!----- Footer ----->
+  <footer>
+    <div class="main_footer ip6_pc">
+      <div class="wrap ">
+        <div class="inner_footer">
+          <div class="box-container box-row-wrap box-space-between box-middle">
+            <div class="box-xs-100 box-sm-70">
+              <div class="footer_left">
+                <div class="footer_img">
+                  <a href="#"><img src="images/genova_logo.png" alt="GENOVA"></a>
+                </div>
+                <div class="footer_text">
+                  <p>医療の現場に、テクノロジーを通して、</p>
+                  <p>サービスの創造と新たな価値を提供します。</p>
+                </div>
               </div>
             </div>
-
-            <div class="box-container table-item">
-              <div class="index box-container box-middle"><img src="./images/table_1.png"></div>
-              <div class="title box-container box-middle box-row-wrap">
-                <p>教育福祉総合センターの整備を促進します</p>
-              </div>
-            </div>
-
-            <div class="box-container table-item">
-              <div class="index box-container box-middle"><img src="./images/table_2.png"></div>
-              <div class="title box-container box-middle box-row-wrap">
-                <p>東中神駅自由通路等の整備を促進します</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="box-md-33 box-xs-100">
-            <div class="box-container table-item">
-              <div class="index box-container box-middle"><img src="./images/table_3.png"></div>
-              <div class="title box-container box-middle box-row-wrap">
-                <p>東京オリンピック･パラリンピック大会に向けたスポーツ振興を更に促進します</p>
-              </div>
-            </div>
-
-            <div class="box-container table-item">
-              <div class="index box-container box-middle"><img src="./images/table_4.png"></div>
-              <div class="title box-container box-middle box-row-wrap">
-                <p>国･都･市が連携し都市計画道路を整備します</p>
-              </div>
-            </div>
-
-            <div class="box-container table-item">
-              <div class="index box-container box-middle"><img src="./images/table_5.png"></div>
-              <div class="title box-container box-middle box-row-wrap">
-                <p>認証保育所利用者の負担軽減をします</p>
-              </div>
-            </div>
-
-            <div class="box-container table-item">
-              <div class="index box-container box-middle"><img src="./images/table_6.png"></div>
-              <div class="title box-container box-middle box-row-wrap">
-                <p>地域の子育て支援拠点事業を推進します</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="box-md-33 box-xs-100">
-            <div class="box-container table-item">
-              <div class="index box-container box-middle"><img src="./images/table_7.png"></div>
-              <div class="title box-container box-middle box-row-wrap">
-                <p>第2子以降の保育所利用者の負担を軽減します</p>
-              </div>
-            </div>
-
-            <div class="box-container table-item">
-              <div class="index box-container box-middle"><img src="./images/table_8.png"></div>
-              <div class="title box-container box-middle box-row-wrap">
-                <p>まちのにぎわいとものづくり企業を支援します</p>
-              </div>
-            </div>
-
-            <div class="box-container table-item">
-              <div class="index box-container box-middle"><img src="./images/table_9.png"></div>
-              <div class="title box-container box-middle box-row-wrap">
-                <p>伝統文化を継承する環境を整備します</p>
-              </div>
-            </div>
-
-            <div class="box-container table-item">
-              <div class="index box-container box-middle"><img src="./images/table_10.png"></div>
-              <div class="title box-container box-middle box-row-wrap">
-                <p>保育士が働きやすい環境を整備します</p>
+            <div class="box-xs-100 box-sm-28">
+              <div class="footer_right">
+                <a href="#"><img src="images/btn_footer.png" alt="運営会社　株式会社GENOVA"></a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <div vs-anchor="view-3" class="mainview mainview-table" id="view-3-sp">
-      <div id="s3">
-        <div class="over-content box-container box-row-wrap">
-          <div class="box-md-33 box-xs-100">
-            <div class="table-title box-container box-row-wrap box-middle">
-              <div>
-                <h3 class="box-xs-100">KAIZEN断行!!</h3>
-                <h1 class="box-xs-100">変える東京。</h1>
-              </div>
-            </div>
-
-            <div class="table-item box-container box-middle">
-              <div>
-                <div class="box-container">
-                  <div class="index">1</div>
-                  <div class="title">
-                    <p>若者が夢と希望を持てる教育都市・東京</p>
-                  </div>
-                </div>
-                <ul>
-                  <li>知・徳・体の基礎的な力を全ての子供が習得</li>
-                  <li>非正規から正規雇用へのキャリアアップを積極的に支援</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="table-item box-container box-middle">
-              <div>
-                <div class="box-container">
-                  <div class="index">2</div>
-                  <div class="title">
-                    <p>高齢者や障害者にやさしい東京</p>
-                  </div>
-                </div>
-                <ul>
-                  <li>「健康寿命」を80歳まで延伸</li>
-                  <li>障害者グループホームや通所施設などを積極的に整備</li>
-                </ul>
-              </div>
+    <div class="main_footer ip6_sp">
+      <div class="wrap">
+        <div class="inner_footer clearfix">
+          <div class="footer_top">
+            <div class="footer_text">
+              <p>運営会社　株式会社GENOVA</p>
+              <p>医療の現場に、テクノロジーを通して、</p>
+              <p>サービスの創造と新たな価値を提供します。</p>
             </div>
           </div>
-
-          <div class="box-md-33 box-xs-100">
-            <div class="table-item box-container box-middle">
-              <div>
-                <div class="box-container">
-                  <div class="index">3</div>
-                  <div class="title">
-                    <p>日本の将来を担う子育て世代にやさしい東京</p>
-                  </div>
-                </div>
-                <ul>
-                  <li>結婚・妊娠・出産・育児・教育への切れ目ない支援</li>
-                  <li>待機児童ゼロ</li>
-                  <li>女性がいききと活躍できる社会</li>
-                </ul>
-              </div>
+          <div class="box-container box-row-wrap box-space-between box-middle">
+            <div class="box-xs-48">
+              <a href="#"><img src="images/genova_logo_sp.png" alt="GENOVA"></a>
             </div>
-
-            <div class="table-item box-container box-middle">
-              <div>
-                <div class="box-container">
-                  <div class="index">4</div>
-                  <div class="title">
-                    <p>世界に開かれた国際都市・東京</p>
-                  </div>
-                </div>
-                <ul>
-                  <li>国際的に活躍する人材の育成</li>
-                  <li>（国家戦略特区を活用した）企業誘致による経済活性化を推進</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="table-item box-container box-middle">
-              <div>
-                <div class="box-container">
-                  <div class="index">5</div>
-                  <div class="title">
-                    <p>都民のいのちと健康を守る安心都市・東京</p>
-                  </div>
-                </div>
-                <ul>
-                  <li>いつでも誰もが医療を受けられる安心社会へ</li>
-                  <li>犯罪をなくす、美しく安全なまちづくり 地域での見守り・防犯活動を支援</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="table-item box-container box-middle">
-              <div>
-                <div class="box-container">
-                  <div class="index">6</div>
-                  <div class="title">
-                    <p>後世に誇れるクリーンで美しい東京</p>
-                  </div>
-                </div>
-                <ul>
-                  <li>経済成長を支え、環境にやさしいエネルギー政策</li>
-                  <li>水と緑に囲まれた潤いを実感できる魅力的な都市へ</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="box-md-33 box-xs-100">
-            <div class="table-item box-container box-middle">
-              <div>
-                <div class="box-container">
-                  <div class="index">7</div>
-                  <div class="title">
-                    <p>力強い経済で日本をリードする東京</p>
-                  </div>
-                </div>
-                <ul>
-                  <li>商店街の元気で地域を活性化</li>
-                  <li>地産地消を推進</li>
-                  <li>新規雇用創出</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="table-item box-container box-middle">
-              <div>
-                <div class="box-container">
-                  <div class="index">8</div>
-                  <div class="title">
-                    <p>災害に強い安全な東京</p>
-                  </div>
-                </div>
-                <ul>
-                  <li>大地震や津波、豪雨等に打ち勝つ強靭な都市へ</li>
-                  <li>木造住宅密集地域の不燃化・無電柱化を推進</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="table-item box-container box-middle">
-              <div>
-                <div class="box-container">
-                  <div class="index">9</div>
-                  <div class="title">
-                    <p>ヒトとモノの流れがスムーズに行きかう首都圏</p>
-                  </div>
-                </div>
-                <ul>
-                  <li>三環状道路（圏央道、外環道、中央環状）をはじめ道路ネットワークを重点整備</p>
-                  <li>鉄道の連続立体交差化等によりスムーズで安全な道路交通へ</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="table-item box-container box-middle">
-              <div>
-                <div class="box-container">
-                  <div class="index">10</div>
-                  <div class="title">
-                    <p>すべての都民を元気にするスポーツ文化都市・東京</p>
-                  </div>
-                </div>
-                <ul>
-                  <li>誰もがスポーツを楽しみ健康を実感できる都市を実現 </li>
-                  <li>障害者も身近にスポーツを楽しめる環境を整備</li>
-                </ul>
-              </div>
+            <div class="box-xs-48">
+              <a href="#"><img src="images/btn_footer_sp.png" alt="運営会社　株式会社GENOVA"></a>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div vs-anchor="view-4" class="mainview mainview-scroll" id="view-4-sp">
-      <div class="mb50" id="s4">
-        <img src="./images/main_4.png" class="hidden-sm">
-        <img src="./images/main_4_sp.png" class="visible-sm">
-      </div>
-
-      <div class="box-container box-center box-row-wrap mb30 ms10-sm" id="content1">
-        <div class="box-md-60 box-xs-100 box-container box-space-between box-row-wrap">
-          <div class="box-md-30 box-xs-100">
-            <h1>都政を前へ。</h1>
-          </div>
-
-          <div class="box-md-65 box-xs-100 pt15 pl5 pr5 mb20">
-            <p>昭島の皆様、昭島から都政に挑戦する自民党の中村豪志です。</p>
-            <p>今日、昭島市は良好な市政運営が成されており、国政においても自公政権が緊張感を持って難題に取り組んでいます。</p>
-            <p>都政においては神野次郎都議の4年間で、信頼関係が政治の安定を生み、国政・都政・市政の連携が経済の活性化を進めてきました。これまでの神野都議からバトンを受け継ぎ、継続すべきは継続し、新たな課題にも積極的に取り組み、都政を前へ進めます。</p>
-          </div>
-        </div>
-      </div>
+    <div class="pageTop">
+      <a href="#"><img src="images/pagetop.png" alt="page top" id="pagetopBtn"></a>
     </div>
+  </footer>
+  <!----- End Footer ----->
 
-    <div vs-anchor="view-5" class="mainview mainview-scroll" id="view-5-sp">
-      <div class="box-container box-center box-row-wrap ms10-sm" id="content2">
-        <div class="box-md-60 box-xs-100 box-container box-space-between box-row-wrap">
-          <div class="box-md-45 box-xs-100 mb15">
-            <h3>プロフィール</h3>
-            <p>昭和51年4月28日生まれ（仙台市生まれ）</p>
-            <p>静岡県立磐田南高校卒、明治大学政治経済学部卒</p>
-            <p>米国オレゴン大学政治学部卒</p>
-          </div>
-
-          <div class="box-md-45 box-xs-100 mb15">
-            <h3>活動</h3>
-            <p>（公社）東京青年会議所 理事長 H27</p>
-            <p>（公社）日本青年会議所 監事 H28</p>
-            <p>第31回わんぱく相撲全国大会 大会会長</p>
-          </div>
-
-          <div class="box-md-45 box-xs-100 mb15">
-            <h3>職歴</h3>
-            <p>ヒューレット･パッカード、モルガン･スタンレー</p>
-            <p>などで16年間国際ビジネスに従事</p>
-          </div>
-
-          <div class="box-md-45 box-xs-100 mb15">
-            <h3>家族</h3>
-            <p>妻、一男（5歳）、一女（2歳）</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="box-container box-center box-row-wrap mb50" id="thumbnail">
-        <div class="box-md-20 box-xs-50 tac">
-          <img src="./images/row_image_1.png">
-        </div>
-
-        <div class="box-md-20 box-xs-50 tac">
-          <img src="./images/row_image_2.png">
-        </div>
-
-        <div class="box-md-20 box-xs-50 hidden-sm tac">
-          <img src="./images/row_image_3.png">
-        </div>
-
-        <div class="box-md-20 box-xs-50 tac">
-          <img src="./images/row_image_4.png">
-        </div>
-
-        <div class="box-md-20 box-xs-50 tac">
-          <img src="./images/row_image_5.png">
-        </div>
-      </div>
-
-      <div class="box-container box-space-around box-row-wrap" id="timeline">
-        <div class="box-md-35 box-xs-100 mb50 tac">
-          <div class="iframe-large tac">
-            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftakeshi.nakamura.tokyo%2F&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1568957893407228" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-          </div>
-          <div class="iframe-small tac">
-            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftakeshi.nakamura.tokyo%2F&tabs=timeline&width=250&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1647358985294027" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-          </div>
-        </div>
-
-        <div class="box-md-35 box-xs-100 mb50 tac">
-          <a class="twitter-timeline" href="https://twitter.com/tana0428">Tweets by tana0428</a>
-          <script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
-      </div>
-
-      <div class="box-container box-center box-row-wrap mb30 ms10-sm" id="map">
-        <div class="box-md-60 box-xs-100 box-container box-space-between box-row-wrap">
-          <div class="box-md-60 box-xs-100 mb20">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d414868.7070246611!2d139.430200842747!3d35.67301845064723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b87f02e57e7%3A0x2e01618b22571b89!2sTokyo%2C+Japan!5e0!3m2!1sen!2s!4v1493870233681"></iframe>
-          </div>
-
-          <div class="box-md-35 box-xs-100 mb20">
-            <h3 class="mt0 mb10">中村たけしの活動の軌跡</h3>
-            <p>2015年に中村豪志が視察や講演等で訪れた場所をマッピングしています。</p>
-            <p class="mb20">（2017年1月1日〜12月31日）</p>
-
-            <a href="#">
-              <div class="btn box-container box-middle box-center">
-                <img src="./images/bounce.png">
-                <span class="ml10">Googleマップで見る</span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <footer>
-        <div class="box-container box-center box-row-wrap" id="footer_social">
-          <div class="box-xs-100 box-md-60 box-container box-space-between box-row-wrap box-middle pb15">
-            <div class="box-md-30 box-xs-100 pt15 tac">
-              <a href="http://www.takeshinakamura.jp/" target="_blank"><img src="./images/social_btn_1.png"></a>
-            </div>
-            <div class="box-md-30 box-xs-100 pt15 tac">
-              <a href="https://www.facebook.com/takeshi.nakamura.543908" target="_blank"><img src="./images/social_btn_2.png"></a>
-            </div>
-            <div class="box-md-30 box-xs-100 pt15 tac">
-              <a href="https://twitter.com/tana0428" target="_blank"><img src="./images/social_btn_3.png"></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="box-container box-center" id="footer_main">
-          <div class="box-xs-100 box-lg-60 box-container box-space-between box-row-wrap box-middle pt15">
-            <div class="box-md-15 box-sm-100 box-xs-100 mb15 ms10-sm">
-              <a href="#">このサイトについて</a>
-            </div>
-            <div class="box-md-15 box-sm-100 box-xs-100 mb15 ms10-sm">
-              <a href="#">個人情報保護方針</a>
-            </div>
-            <div class="box-md-55 box-sm-100 box-xs-100 mb15 ms10-sm tar tal-sm">
-              Copyright © 2017 Takeshi Nakamura All Rights Reserved.
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
-  </div>
 </body>
+
+</html>
